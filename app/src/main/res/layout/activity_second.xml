@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+    <data >
+        <variable
+            name="viewmodel"
+            type="com.example.priceshoprecyclermvvm.viewmodel.PriceViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:text="تعداد کل"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtunit"
+            android:text="@{String.valueOf(viewmodel.all_unit_price)}"
+            android:gravity="center_horizontal"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:text="مبلغ کل"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:text="@{String.valueOf(viewmodel.all_totalPrice)}"
+            android:id="@+id/txttotal" />
+    </LinearLayout>
+
+</layout>
