@@ -69,11 +69,11 @@ public class PriceViewModel extends BaseObservable {
         }
 
 
-        int totalPrice = 0;
-        for (int i2 = 0; i2 < arrayList.size(); i2++) {
-            totalPrice += arrayList.get(i2).getTotal_price();
-            int a = totalPrice;
-        }
+//        int totalPrice = 0;
+//        for (int i2 = 0; i2 < arrayList.size(); i2++) {
+//            totalPrice += arrayList.get(i2).getTotal_price();
+//            int a = totalPrice;
+//        }
 
     }
 
